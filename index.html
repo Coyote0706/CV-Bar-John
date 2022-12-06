@@ -18,7 +18,7 @@
 
 <h2></h2>
 <p></p>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -127,17 +127,17 @@ function closeNav() {
 			<div class="desc">MAGASINIER (CDD)<br>AGENT LOGISTIQUE(CDD)<br>PREPARATEUR DE COMMANDE (CDD)</div>
 		</div>
 	</li>
+  <!-- Item 5 -->
+  <li>
+    <div class="direction-r">
+      <div class="flag-wrapper">
+        <span class="flag">AUCHAN-PETITE FORET</span>
+        <span class="time-wrapper"><span class="time">2011 - 2014</span></span>
+      </div>
+      <div class="desc">EMPLOYE LOGISTIQUE (CDD)</div>
+    </div>
+  </li>
 </ul>
-
-
-
-
-
-
-
-
-
-
     </div>
   </section>
 
@@ -158,16 +158,45 @@ function closeNav() {
       </div>
     </section>
 
-<footer>
-  <section>
-    <div class="contact">
-
-    </div>
-  </section>
-</footer>
 
 
 
-  </body>
+  <nav class="menu">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+    <label class="menu-open-button" for="menu-open">
+      <span class="hamburger hamburger-1"></span>
+      <span class="hamburger hamburger-2"></span>
+      <span class="hamburger hamburger-3"></span>
+    </label>
 
+    <a href="#" class="menu-item"><img src="" alt=""> <i class="fa fa-bar-chart"></i></a>
+    <a href="#" class="menu-item"> <i class="fa fa-plus">2</i> </a>
+    <a href="#" class="menu-item"> <i class="fa fa-heart">3</i> </a>
+    <a href="#" class="menu-item"> <i class="fa fa-envelope">4</i> </a>
+    <a href="#" class="menu-item"> <i class="fa fa-cog">5</i> </a>
+    <a href="#" class="menu-item"> <i class="fa fa-ellipsis-h">6</i> </a>
+
+  </nav>
+
+
+  <!-- filters -->
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="shadowed-goo">
+
+            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+            <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+            <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+            <feComposite in2="shadow" in="goo" result="goo" />
+            <feComposite in2="goo" in="SourceGraphic" result="mix" />
+        </filter>
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feComposite in2="goo" in="SourceGraphic" result="mix" />
+        </filter>
+      </defs>
+  </svg>
 </html>
