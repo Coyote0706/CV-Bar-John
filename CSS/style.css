@@ -713,3 +713,14 @@ body {
   background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
   box-shadow: 0 4px 15px 0 #f2b175;
 }
+
+
+
+
+html, body {
+  padding: 0;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  background: #0A0A27;
+}
