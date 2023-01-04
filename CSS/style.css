@@ -360,14 +360,14 @@ h1 {
 .menu-item, .menu-open-button {
   background: #f2b175;
   border-radius: 100%;
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   margin-left: -40px;
   position: absolute;
-  top: 120px;
+  top: 100px;
   color: black;
   text-align: center;
-  line-height: 80px;
+  line-height: 49px;
   transform: translate3d(0, 0, 0);
   transition: transform ease-out 200ms;
 }
