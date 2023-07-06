@@ -9,25 +9,40 @@
   <body>
     <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#profil">Profil</a>
-  <a href="#Competences">Compétences</a>
-  <a href="#Expériences">Expériences</a>
-  <a href="#Langue">Langue</a>
-  <a href="#Centresd'intérets">Centres d'intérets</a>
+  <a href="#profil" onclick="closeNav()" >Profil</a>
+  <a href="#Competences" onclick="closeNav()">Compétences</a>
+  <a href="#Experiences" onclick="closeNav()">Expériences</a>
+  <a href="#Langue" onclick="closeNav()">Langue</a>
+  <a href="#centresdinterets" onclick="closeNav()">Centres d'intérets</a>
 </div>
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
+  document.querySelector('span').style.display="none";
+
 }
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
+  document.querySelector('span').style.display="block";
+
 }
+document.querySelector('#main').addEventListener('click', closeNav())
+
 </script>
 
-<section>
-  <div class="flip-card">
+
+
+<section id="imagefond">
+  <img src="img/composant.jpg" alt="">
+  <div>
+    <h1>John Bar</h1>
+    <p>32ans</p>
+    <p>Intégrateur web</p>
+  </div>
+</section>
+  <!-- <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <img src="img/profil.jpg" alt="Avatar" style="width:180px;height:200px;">
@@ -38,7 +53,7 @@ function closeNav() {
       <p>Intégrateur web</p>
     </div>
   </div>
-</div>
+</div> -->
 
 </section>
 
@@ -107,74 +122,66 @@ function closeNav() {
       <div class="circle"> </div>
       <div class="ribbon">Responsive</div>
     </div>
-
   </div>
 
-
-  <section id="Expériences">
+  <section id="Experiences">
     <div class="expériences">
       <h2>EXPERIENCES</h2>
       <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 
-<!-- The Timeline -->
-
-<ul class="timeline">
-
-	<!-- Item 1 -->
-	<li>
-		<div class="direction-r">
-			<div class="flag-wrapper">
-				<span class="flag">ASSOCIATION AGEVAL-VALENCIENNES</span>
-				<span class="time-wrapper"><span class="time">2022</span></span>
-			</div>
-			<div class="desc">AGENT POLYVALENT ATELIER NUMERIQUE (CDDI)</div>
-		</div>
-	</li>
-
-	<!-- Item 2 -->
-	<li>
-		<div class="direction-l">
-			<div class="flag-wrapper">
-				<span class="flag">MICHELIN-PROUVY</span>
-				<span class="time-wrapper"><span class="time">2019</span></span>
-			</div>
-			<div class="desc">AGENT LOGISTIQUE (CDD)</div>
-		</div>
-	</li>
-
-	<!-- Item 3 -->
-	<li>
-		<div class="direction-r">
-			<div class="flag-wrapper">
-				<span class="flag">CARREFOUR-CONDE SUR L'ESCAUT</span>
-				<span class="time-wrapper"><span class="time">2016 - 2017</span></span>
-			</div>
-			<div class="desc">EQUIPIER DE VENTE (CDD)</div>
-		</div>
-	</li>
-
-  <!-- Item 4 -->
-	<li>
-		<div class="direction-l">
-			<div class="flag-wrapper">
-				<span class="flag">LANSELLE-TRITH ST LEGER<br>GEODIS-PROUVY<br>EXAPAQ-PROUVY</span>
-				<span class="time-wrapper"><span class="time">2015</span></span>
-			</div>
-			<div class="desc">MAGASINIER (CDD)<br>AGENT LOGISTIQUE(CDD)<br>PREPARATEUR DE COMMANDE (CDD)</div>
-		</div>
-	</li>
-
-  <!-- Item 5 -->
-  <li>
-    <div class="direction-r">
-      <div class="flag-wrapper">
-        <span class="flag">AUCHAN-PETITE FORET</span>
-        <span class="time-wrapper"><span class="time">2011 - 2014</span></span>
-      </div>
-      <div class="desc">EMPLOYE LOGISTIQUE (CDD)</div>
-    </div>
-  </li>
-</ul>
+      <!-- The Timeline -->
+      <ul class="timeline">
+  	    <!-- Item 1 -->
+      	<li>
+      		<div class="direction-r">
+      			<div class="flag-wrapper">
+      				<span class="flag">ASSOCIATION AGEVAL-VALENCIENNES</span>
+      				<span class="time-wrapper"><span class="time">2022</span></span>
+      			</div>
+      			<div class="desc">AGENT POLYVALENT ATELIER NUMERIQUE (CDDI)</div>
+      		</div>
+      	</li>
+      	<!-- Item 2 -->
+      	<li>
+      		<div class="direction-l">
+      			<div class="flag-wrapper">
+      				<span class="flag">MICHELIN-PROUVY</span>
+      				<span class="time-wrapper"><span class="time">2019</span></span>
+      			</div>
+      			<div class="desc">AGENT LOGISTIQUE (CDD)</div>
+      		</div>
+      	</li>
+      	<!-- Item 3 -->
+      	<li>
+      		<div class="direction-r">
+      			<div class="flag-wrapper">
+      				<span class="flag">CARREFOUR-CONDE SUR L'ESCAUT</span>
+      				<span class="time-wrapper"><span class="time">2016 - 2017</span></span>
+      			</div>
+      			<div class="desc">EQUIPIER DE VENTE (CDD)</div>
+      		</div>
+      	</li>
+        <!-- Item 4 -->
+      	<li>
+      		<div class="direction-l">
+      			<div class="flag-wrapper">
+      				<span class="flag">LANSELLE-TRITH ST LEGER<br>GEODIS-PROUVY<br>EXAPAQ-PROUVY</span>
+      				<span class="time-wrapper"><span class="time">2015</span></span>
+      			</div>
+      			<div class="desc">MAGASINIER (CDD)<br>AGENT LOGISTIQUE(CDD)<br>PREPARATEUR DE COMMANDE (CDD)</div>
+      		</div>
+      	</li>
+        <!-- Item 5 -->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">AUCHAN-PETITE FORET</span>
+              <span class="time-wrapper"><span class="time">2011 - 2014</span></span>
+            </div>
+            <div class="desc">EMPLOYE LOGISTIQUE (CDD)</div>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -185,7 +192,7 @@ function closeNav() {
       </div>
     </section>
 
-    <section id="Centresd'intérets">
+    <section id="centresdinterets">
       <div class="centre d'interet">
         <h2>CENTRES D'INTERETS</h2>
         <img src="img/bricolage.png" alt="brico">
@@ -198,12 +205,13 @@ function closeNav() {
   <nav class="menu">
     <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open">
     <label class="menu-open-button" for="menu-open">
-      <span class="hamburger hamburger-1"></span>
+      <!-- <span class="hamburger hamburger-1"></span>
       <span class="hamburger hamburger-2"></span>
-      <span class="hamburger hamburger-3"></span>
+      <span class="hamburger hamburger-3"></span> -->
+      <img src="img/info.png" alt="">
     </label>
 
-    <a href="tel:+33783058368" class="menu-item"><img src="img/tel.png" alt="tel"> <i class="fa fa-bar-chart"></i></a>
+    <a href="tel:+33783058368"class="menu-item"><img src="img/tel.png" alt="tel"> <i class="fa fa-bar-chart"></i></a>
     <a href="mailto:john706@live.fr" class="menu-item"><img src="img/mail.png" alt="mail"><i class="fa fa-plus"></i></a>
     <a href="https://goo.gl/maps/tdVk4WXfma33hUBv7" class="menu-item"><img src="img/localisation.png" alt="lieu"><i class="fa fa-heart"></i></a>
     <a href="#" class="menu-item"><img src="img/upload.png" alt=""><i class="fa fa-envelope"></i></a>

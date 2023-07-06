@@ -2,9 +2,7 @@
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Lato", sans-serif;
-}
+
 
 .sidenav {
   height: 100%;
@@ -40,7 +38,7 @@ body {
   margin-left: 50px;
 }
 img{
-  width: 62%
+  width: 60%
 }
 
 h2{
@@ -49,12 +47,13 @@ h2{
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 25px;
   color: black;
   font-family: 'Open Sans', sans-serif;
   font-size: 100%;
   line-height: 1.6em;
 }
+
 
 /* ================ The Timeline ================ */
 
@@ -225,115 +224,136 @@ body {
   margin: 1em 0 0 0.75em;
 }
 
+#centresdinterets div{
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+#centresdinterets img{
+  width: 50%;
+  padding: 20px
+}
+#centresdinterets h2{
+  width: 100%;
+
+}
 /* ================ Timeline Media Queries ================ */
+
 
 @media screen and (max-width: 660px) {
 
-.timeline {
- 	width: 100%;
-	padding: 4em 0 1em 0;
-}
+  .timeline {
+   	width: 100%;
+  	padding: 4em 0 1em 0;
+  }
 
-.timeline li {
-	padding: 2em 0;
-}
+  .timeline li {
+  	padding: 2em 0;
+  }
 
-.direction-l,
-.direction-r {
-	float: none;
-	width: 100%;
+  .direction-l,
+  .direction-r {
+  	float: none;
+  	width: 100%;
 
-	text-align: center;
-}
+  	text-align: center;
+  }
 
-.flag-wrapper {
-	text-align: center;
-}
+  .flag-wrapper {
+  	text-align: center;
+  }
 
-.flag {
-	background: rgb(255,255,255);
-	z-index: 15;
-}
+  .flag {
+  	background: rgb(255,255,255);
+  	z-index: 15;
+  }
 
-.direction-l .flag:before,
-.direction-r .flag:before {
-  position: absolute;
-  top: -30px;
-	left: 50%;
-	content: ' ';
-	display: block;
-	width: 12px;
-	height: 12px;
-	margin-left: -9px;
-	background: #595a5a;
-	border-radius: 10px;
-	border: 3px solid rgb(242 177 117);
-	z-index: 10;
-}
+  .direction-l .flag:before,
+  .direction-r .flag:before {
+    position: absolute;
+    top: -30px;
+  	left: 50%;
+  	content: ' ';
+  	display: block;
+  	width: 12px;
+  	height: 12px;
+  	margin-left: -9px;
+  	background: #595a5a;
+  	border-radius: 10px;
+  	border: 3px solid rgb(242 177 117);
+  	z-index: 10;
+  }
 
-.direction-l .flag:after,
-.direction-r .flag:after {
-	content: "";
-	position: absolute;
-	left: 50%;
-	top: -8px;
-	height: 0;
-	width: 0;
-	margin-left: -8px;
-	border: solid transparent;
-	border-bottom-color: rgb(255,255,255);
-	border-width: 8px;
-	pointer-events: none;
-}
+  .direction-l .flag:after,
+  .direction-r .flag:after {
+  	content: "";
+  	position: absolute;
+  	left: 50%;
+  	top: -8px;
+  	height: 0;
+  	width: 0;
+  	margin-left: -8px;
+  	border: solid transparent;
+  	border-bottom-color: rgb(255,255,255);
+  	border-width: 8px;
+  	pointer-events: none;
+  }
 
-.time-wrapper {
-	display: block;
-	position: relative;
-	margin: 4px 0 0 0;
-	z-index: 14;
-}
+  .time-wrapper {
+  	display: block;
+  	position: relative;
+  	margin: 4px 0 0 0;
+  	z-index: 14;
+  }
 
-.direction-l .time-wrapper {
-	float: none;
-}
+  .direction-l .time-wrapper {
+  	float: none;
+  }
 
-.direction-r .time-wrapper {
-	float: none;
-}
+  .direction-r .time-wrapper {
+  	float: none;
+  }
 
-.desc {
-	position: relative;
-	margin: 1em 0 0 0;
-	padding: 1em;
-	background: rgb(245,245,245);
-	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
-	-moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
-	box-shadow: 0 0 1px rgba(0,0,0,0.20);
+  .desc {
+  	position: relative;
+  	margin: 1em 0 0 0;
+  	padding: 1em;
+  	background: rgb(245,245,245);
+  	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+  	-moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+  	box-shadow: 0 0 1px rgba(0,0,0,0.20);
 
-  z-index: 15;
-}
+    z-index: 15;
+  }
 
-.direction-l .desc,
-.direction-r .desc {
-	position: relative;
-	margin: 1em 1em 0 1em;
-	padding: 1em;
+  .direction-l .desc,
+  .direction-r .desc {
+  	position: relative;
+  	margin: 1em 1em 0 1em;
+  	padding: 1em;
 
-  z-index: 15;
-}
-
-}
-
-@media screen and (min-width: 400px) and (max-width: 660px) {
-
-.direction-l .desc,
-.direction-r .desc {
-	margin: 1em 4em 0 4em;
-}
+    z-index: 15;
+  }
 
 }
 
+@media screen and (min-width:768px){
+  #centresdinterets img{
+    width: 150px;
+    padding: 20px
+  }
 
+}
+/* @media screen and (min-width: 400px) and (max-width: 660px) {
+
+    .direction-l .desc,
+    .direction-r .desc {
+    	margin: 1em 4em 0 4em;
+    }
+
+} */
+
+}
 
 body {
   text-align: center;
@@ -362,12 +382,11 @@ h1 {
   border-radius: 100%;
   width: 40px;
   height: 40px;
-  margin-left: -15px;
+  margin-left: -24px;
   position: absolute;
-  top: 100px;
   color: black;
   text-align: center;
-  line-height: 49px;
+  line-height: 50px;
   transform: translate3d(0, 0, 0);
   transition: transform ease-out 200ms;
 }
@@ -412,20 +431,20 @@ h1 {
 }
 
 .menu {
-  position: absolute;
-  left: 50%;
-  margin-left: -190px;
-  padding-top: 20px;
-  padding-left: 190px;
-  width: 380px;
-  height: 250px;
-  box-sizing: border-box;
-  font-size: 20px;
-  text-align: left;
+  position: fixed;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -190px;
+    padding-bottom: 20px;
+    padding-left: 190px;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: left;
+    z-index: 99;
 }
 
 .menu-item:hover {
-  background: white;
+  background: #f2b175;
   color: #e91e63;
 }
 .menu-item:nth-child(3) {
@@ -473,27 +492,29 @@ h1 {
 }
 .menu-open:checked ~ .menu-item:nth-child(3) {
   transition-duration: 180ms;
-  transform: translate3d(0.08361px, -104.99997px, 0);
+  transform: translate3d(31.08361px, -46.99997px, 0);
 }
 .menu-open:checked ~ .menu-item:nth-child(4) {
   transition-duration: 280ms;
-  transform: translate3d(90.9466px, -52.47586px, 0);
+  transform: translate3d(139.9466px, 11.52414px, 0);
 }
 .menu-open:checked ~ .menu-item:nth-child(5) {
   transition-duration: 380ms;
-  transform: translate3d(90.9466px, 52.47586px, 0);
+  transform: translate3d(83.9466px, -20.52414px, 0);
 }
 .menu-open:checked ~ .menu-item:nth-child(6) {
   transition-duration: 480ms;
-  transform: translate3d(0.08361px, 104.99997px, 0);
+  transform: translate3d(-27.91639px, -48.00003px, 0);
 }
 .menu-open:checked ~ .menu-item:nth-child(7) {
   transition-duration: 580ms;
-  transform: translate3d(-90.86291px, 52.62064px, 0);
+  transform: translate3d(-81.86291px, -25.37936px, 0);
 }
 .menu-open:checked ~ .menu-item:nth-child(8) {
   transition-duration: 680ms;
-  transform: translate3d(-91.03006px, -52.33095px, 0);
+  transform: translate3d(-129.03006px, 11.66905px, 0);
+
+
 }
 .menu-open:checked ~ .menu-item:nth-child(9) {
   transition-duration: 780ms;
@@ -509,10 +530,11 @@ body {
 }
 
 .main-wrapper {
-  width: 90%;
-  max-width: 900px;
   margin: 3em auto;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .badge {
@@ -718,7 +740,6 @@ body {
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  width: 320px;
   height: 219px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -758,4 +779,20 @@ body {
   background-color: black;
   color: #f2b175;
   transform: rotateY(180deg);
+}
+#imagefond img{
+  width: 100%
+}
+#imagefond{
+  position: relative;
+  color: #f2b175
+}
+
+#imagefond div{
+  position: absolute;
+  top: -30px;
+  text-align: center;
+  width: 100%;
+
+
 }
