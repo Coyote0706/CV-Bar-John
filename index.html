@@ -8,25 +8,25 @@
   </head>
   <body>
     <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#profil" onclick="closeNav()" >Profil</a>
-    <a href="#Competences" onclick="closeNav()">Compétences</a>
-    <a href="#Experiences" onclick="closeNav()">Expériences</a>
-    <a href="#Langue" onclick="closeNav()">Langue</a>
-    <a href="#centresdinterets" onclick="closeNav()">Centres d'intérets</a>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <div id="nav" class="nav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <ul>
+        <a href="#profil" onclick="closeNav()" >Profil</a>
+        <a href="#Competences" onclick="closeNav()">Compétences</a>
+        <a href="#Experiences" onclick="closeNav()">Expériences</a>
+        <a href="#Langue" onclick="closeNav()">Langue</a>
+        <a href="#centresdinterets" onclick="closeNav()">Centres d'intérets</a>
+      </ul>
     </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 <script>
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.querySelector('span').style.display="none";
-
+  document.getElementById("nav").style.width = "100%";
 }
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.querySelector('span').style.display="block";
-
+  document.getElementById("nav").style.width = "0";
 }
 document.querySelector('#main').addEventListener('click', closeNav())
 
@@ -211,10 +211,10 @@ document.querySelector('#main').addEventListener('click', closeNav())
       <img src="IMG/info.png" alt="">
     </label>
 
-    <a href="tel:+33783058368"class="menu-item"><img src="IMG/tel.png" alt="tel"> <i class="fa fa-bar-chart"></i></a>
+    <a href="tel:+33783058368"class="menu-item"><img src="IMG/tel.png" alt="tel"></a>
     <a href="mailto:john706@live.fr" class="menu-item"><img src="IMG/mail.png" alt="mail"><i class="fa fa-plus"></i></a>
     <a href="https://goo.gl/maps/tdVk4WXfma33hUBv7" class="menu-item"><img src="IMG/localisation.png" alt="lieu"><i class="fa fa-heart"></i></a>
-    <a href="#" class="menu-item"><img src="IMG/upload.png" alt=""><i class="fa fa-envelope"></i></a>
+    <a href="CV_john_bar.pdf" class="menu-item" download><img src="IMG/upload.png" alt=""></a>
     <a href="https://github.com/Coyote0706" class="menu-item"><img src="IMG/github.png" alt="git"><i class="fa fa-cog"></i></a>
     <a href="https://www.linkedin.com/in/john-bar-b4488a256/" class="menu-item"><img src="IMG/linkedin.png" alt="in"><i class="fa fa-ellipsis-h"></i></a>
 
